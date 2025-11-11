@@ -86,7 +86,18 @@ public:
     Sword(Character* c) : equip_testmentDecorator(c) {}
     string getDescription() const override {return character->getDescription() + ", Sword";}
     int getAttack() const override {
-        return (character->getDescription().compare("Knight") == 0 ? character->getAttack() + 70 : character->getAttack() + 30);
+        // Knight *kn = dynamic_cast<Knight *> (character); // 이게 왜 자꾸 nulltpr로 나올까?  ->  이 앞전에 사용된 장비를 고려해야 됨  -> ptr의 chain
+        // if (kn != nullptr)
+        //     return character->getAttack() + 70;
+        
+        // // 반복문으로 데코레이터를 벗긴다
+        // Character *baseCharacter = this->character;
+    
+        // while (auto* deco = dynamic_cast<equip_testmentDecorator *>(baseCharacter)) {
+        //     baseCharacter = deco->character;    // protected라 안된다..
+        // }
+
+        return character->getAttack() + 30;
     }
     int getSpeed() const override {return character->getSpeed();}
     int getDefense() const override {return character->getDefense();}
