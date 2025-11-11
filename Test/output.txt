@@ -1,0 +1,13 @@
+-------------------------------------------------------------
+Knight, Armor, Boots, Sword | Attack: 100 | Speed: 50 | Defense: 110
+Knight, Armor, Bow | Attack: 95 | Speed: 35 | Defense: 110
+Knight, Boots, Staff | Attack: 90 | Speed: 55 | Defense: 80
+-------------------------------------------------------------
+Wizard, Armor, Boots, Sword | Attack: 80 | Speed: 60 | Defense: 60
+Wizard, Armor, Bow | Attack: 75 | Speed: 45 | Defense: 60
+Wizard, Boots, Staff | Attack: 70 | Speed: 65 | Defense: 30
+-------------------------------------------------------------
+Archer, Armor, Boots, Sword | Attack: 90 | Speed: 80 | Defense: 70
+Archer, Armor, Bow | Attack: 85 | Speed: 65 | Defense: 70
+Archer, Boots, Staff | Attack: 80 | Speed: 85 | Defense: 40
+-------------------------------------------------------------
